@@ -6,10 +6,10 @@ function checkScientific() {
     const scientificRegex = /^[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?$/;
 
     if (scientificRegex.test(input)) {
-        result.textContent = `${input} adalah angka ilmiah.`;
+        result.textContent = `${input} Is a Scientific Number.`;
         result.style.color = 'green';
     } else {
-        result.textContent = `${input} bukan angka ilmiah.`;
+        result.textContent = `${input} Not a Scientific Number.`;
         result.style.color = 'red';
     }
 }
